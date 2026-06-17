@@ -7,6 +7,7 @@ import android.view.*
 import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.edgepanel.app.model.AppItem
+import com.edgepanel.app.util.resolveThemeDrawable
 
 class AppGridAdapter(
     private val ctx: Context,
@@ -34,7 +35,7 @@ class AppGridAdapter(
             setPadding(8, 20, 8, 20)
             isClickable  = true
             isFocusable  = true
-            setBackgroundResource(android.R.attr.selectableItemBackground)
+            setBackgroundResource(ctx.resolveThemeDrawable(android.R.attr.selectableItemBackground))
         }
 
         val ico = ImageView(ctx).apply {

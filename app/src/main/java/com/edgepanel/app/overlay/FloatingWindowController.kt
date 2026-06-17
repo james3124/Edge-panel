@@ -12,6 +12,7 @@ import com.edgepanel.app.model.AppItem
 import com.edgepanel.app.model.FloatingWindow
 import com.edgepanel.app.model.WindowState
 import com.edgepanel.app.util.PermissionHelper
+import com.edgepanel.app.util.resolveThemeDrawable
 
 class FloatingWindowController(private val ctx: Context) {
 
@@ -105,7 +106,7 @@ class FloatingWindowController(private val ctx: Context) {
                     text = sym; textSize = 16f; setTextColor(Color.WHITE)
                     setPadding(20, 0, 20, 0); gravity = Gravity.CENTER
                     layoutParams = LinearLayout.LayoutParams(80, LinearLayout.LayoutParams.MATCH_PARENT)
-                    setBackgroundResource(android.R.attr.selectableItemBackground)
+                    setBackgroundResource(ctx.resolveThemeDrawable(android.R.attr.selectableItemBackground))
                     setOnClickListener { onWindowAction(item, act) }
                 })
             }

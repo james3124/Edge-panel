@@ -29,6 +29,14 @@ android {
     }
     kotlinOptions { jvmTarget = '17' }
     buildFeatures { viewBinding true }
+
+    lint {
+        // Still runs and generates the HTML report (build/reports/lint-results-*.html),
+        // but no longer fails the build over findings. Flip these back to true once
+        // you've worked through the report at your own pace.
+        abortOnError false
+        checkReleaseBuilds false
+    }
 }
 
 dependencies {

@@ -4,7 +4,19 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
+import android.util.TypedValue
 import com.edgepanel.app.model.AppItem
+
+/**
+ * Resolves a theme attribute (e.g. android.R.attr.selectableItemBackground) into
+ * the actual drawable resource ID the current theme points it at. Needed because
+ * setBackgroundResource() requires a real @drawable id, not a raw @attr reference.
+ */
+fun Context.resolveThemeDrawable(attr: Int): Int {
+    val typedValue = TypedValue()
+    theme.resolveAttribute(attr, typedValue, true)
+    return typedValue.resourceId
+}
 
 object AppUtils {
 
