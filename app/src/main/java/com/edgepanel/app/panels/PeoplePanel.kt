@@ -35,7 +35,7 @@ class PeoplePanel(context: Context) : LinearLayout(context) {
 
     private fun showPermissionPrompt() {
         val tv = TextView(context).apply {
-            text    = "👥
+            text    = "👥\n\nContacts permission required.\nOpen the app and grant access."
 
 Contacts permission required.
 Open the app and grant access."
