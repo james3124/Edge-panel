@@ -168,8 +168,7 @@ class WeatherPanel(context: Context) : ScrollView(context) {
         val key  = prefs.getWeatherApiKey()
         val city = prefs.getWeatherCity()
         if (key.isBlank()) {
-            statusView.text = "ℹ️ Add your OpenWeatherMap API key above
-(free at openweathermap.org)"
+            statusView.text = "ℹ️ Add your OpenWeatherMap API key above\n(free at openweathermap.org)"
             emojiView.text  = "🌡️"; tempView.text = "--°"; descView.text = ""; detailsView.text = ""
             return
         }
