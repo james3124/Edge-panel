@@ -20,8 +20,8 @@ class PanelView(context: Context, private val cfg: HandleConfig) : FrameLayout(c
 
     private val backdrop: View
     private val container: LinearLayout
-    private val tabBar: LinearLayout
-    private val content: FrameLayout
+    private lateinit val tabBar: LinearLayout
+    private lateinit val content: FrameLayout
     private val floatingCtrl = FloatingWindowController(context)
     private val dm = context.resources.displayMetrics
     private val panelW = (dm.widthPixels * 0.78f).toInt()
