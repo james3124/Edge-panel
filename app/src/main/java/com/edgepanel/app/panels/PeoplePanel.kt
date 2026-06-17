@@ -36,9 +36,6 @@ class PeoplePanel(context: Context) : LinearLayout(context) {
     private fun showPermissionPrompt() {
         val tv = TextView(context).apply {
             text    = "👥\n\nContacts permission required.\nOpen the app and grant access."
-
-Contacts permission required.
-Open the app and grant access."
             textSize = 14f; gravity = Gravity.CENTER
             setTextColor(Color.parseColor("#757575"))
             setPadding(48, 80, 48, 80)
@@ -65,7 +62,6 @@ Open the app and grant access."
             if (contacts.isEmpty()) {
                 addView(TextView(context).apply {
                     text = "No pinned contacts.\nOpen the Contacts app to manage."
-Open the Contacts app to manage."
                     textSize = 13f; gravity = Gravity.CENTER
                     setTextColor(Color.parseColor("#9E9E9E"))
                     setPadding(48, 80, 48, 48)
