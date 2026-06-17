@@ -64,7 +64,7 @@ Open the app and grant access."
             progress.visibility = GONE
             if (contacts.isEmpty()) {
                 addView(TextView(context).apply {
-                    text = "No pinned contacts.
+                    text = "No pinned contacts.\nOpen the Contacts app to manage."
 Open the Contacts app to manage."
                     textSize = 13f; gravity = Gravity.CENTER
                     setTextColor(Color.parseColor("#9E9E9E"))
