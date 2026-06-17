@@ -70,23 +70,22 @@
                 android:text="COLOR" android:textSize="11sp" android:textColor="@color/text_secondary"
                 android:letterSpacing="0.1" android:layout_marginBottom="8dp"/>
 
-            <!-- AFTER — replace with this -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 app:cardCornerRadius="12dp">
-               <HorizontalScrollView
+                <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:scrollbars="none">
-                        <LinearLayout
-                            android:id="@+id/colorGrid"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:padding="16dp"
-                            android:gravity="center_vertical"/>
+                    <LinearLayout
+                        android:id="@+id/colorGrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center_vertical"/>
                 </HorizontalScrollView>
             </com.google.android.material.card.MaterialCardView>
 
