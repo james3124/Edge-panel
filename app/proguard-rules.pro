@@ -1,0 +1,2 @@
+-keep class com.edgepanel.app.** { *; }
+-keepclassmembers class com.edgepanel.app.model.** { *; }

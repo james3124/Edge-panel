@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M20,30 C20,24 24,20 30,20 L78,20 C84,20 88,24 88,30 L88,78 C88,84 84,88 78,88 L30,88 C24,88 20,84 20,78 Z"
+        android:fillAlpha="0.0"/>
+    <!-- Edge handle shape -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M14,40 L14,68 C14,75 19,80 26,80 L34,80 L34,28 L26,28 C19,28 14,33 14,40 Z"/>
+    <!-- Grip lines -->
+    <path android:strokeColor="#6200EE" android:strokeWidth="3" android:pathData="M19,48 L29,48"/>
+    <path android:strokeColor="#6200EE" android:strokeWidth="3" android:pathData="M19,54 L29,54"/>
+    <path android:strokeColor="#6200EE" android:strokeWidth="3" android:pathData="M19,60 L29,60"/>
+</vector>
